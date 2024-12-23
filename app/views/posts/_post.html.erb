@@ -5,6 +5,17 @@
   </p>
 
   <p>
+  <strong>comment:</strong>
+  <% if post.comments.any? %>
+    <% post.comments.each do |comment| %>
+      <%= comment.content %>
+    <% end %>
+  <% else %>
+    <em>No comments yet.</em>
+  <% end %>
+</p>
+
+  <p>
     <strong>User:</strong>
     <%= post.user_id %>
   </p>
