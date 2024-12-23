@@ -20,7 +20,7 @@
             <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li> <%# fixed link %>
+            <li><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "dropdown-item" %></li> <%# fixed link %>
           </ul>
           <% else %>
           <ul class="dropdown-menu text-small">
